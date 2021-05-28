@@ -1,0 +1,330 @@
+/*
+  Theme Name: PERfekt Gulvservice
+  Description: PFGS Theme
+  Auther: Martin & Lars
+  Template: twentytwenty
+  Version: 1.0
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(https://cdn.discordapp.com/attachments/671276212303167488/838706022829785157/IMG_2228.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  right: 0 !important;
+  left: 0 !important;
+  main {
+    min-height: calc(100vh - 170px);
+  }
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  z-index: 900;
+  height: 100px;
+  border-bottom: 1px solid #42424210 !important;
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation-wrapper a,
+.header-navigation-wrapper a:hover {
+  text-decoration: none !important;
+  transition: none !important;
+}
+
+.header-navigation-wrapper a:hover,
+.current_page_item {
+  border-bottom: 2px solid #d1a58a;
+  margin-bottom: -2px;
+  transition: none !important;
+}
+
+.wprm-overlay {
+  opacity: 0.5;
+}
+.cbp-spmenu {
+  padding-top: 100px;
+}
+#custom_menu_icon {
+  transform: scale(1.4);
+}
+#custom_menu_icon:hover .hamburger-inner::after {
+  color: #111111;
+}
+.hamburger-inner::after {
+  content: 'MENU';
+  font-size: 0.6em;
+  font-weight: bold;
+  height: 0;
+  margin-top: -4px;
+  white-space: nowrap;
+}
+.hamburger--slider.is-active .hamburger-inner::after {
+  height: 4px;
+  content: '';
+  margin-top: 0;
+}
+.wprmenu_icon {
+  top: 0 !important;
+  right: 0 !important;
+  width: 100%;
+  &:before {
+    margin: 2px 10px;
+  }
+}
+.wprm-wrapper {
+  overflow: hidden !important;
+}
+
+#tlf {
+  position: fixed;
+  right: 0;
+  top: 120px;
+  z-index: 901;
+  a {
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 15% 50%);
+    padding: 10px 30px 10px 50px;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* general side indhold */
+#site-content article {
+  padding-top: 100px;
+}
+.post-inner {
+  padding: 0;
+}
+
+.h1-tekst,
+.h2-tekst,
+.h3-tekst {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 30px 0 0 0 !important;
+}
+.h1-tekst {
+  padding: 0 20vw;
+  font-size: 50px;
+}
+.h2-tekst {
+  padding: 0 5vw;
+  font-size: 50px;
+}
+.h3-tekst {
+  padding: 0 5vw;
+  font-size: 30px;
+  margin: 30px 0 -30px 0 !important;
+}
+
+.wp-block-columns {
+  max-width: unset !important;
+}
+
+.wp-block-column {
+  max-width: 99vw;
+  &:last-child {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.p-tekst {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-left: 10vw;
+  a {
+    color: black;
+  }
+}
+.a-tekst {
+  a {
+    color: black;
+  }
+}
+
+/* forside slider */
+#n2-ss-2-arrow-previous {
+  left: 0 !important;
+}
+#n2-ss-2-arrow-next {
+  right: 0 !important;
+}
+#n2-ss-2-arrow-previous,
+#n2-ss-2-arrow-next {
+  height: 100% !important;
+  padding: 0 10px;
+  top: 0 !important;
+  display: flex;
+  align-content: center;
+}
+#n2-ss-2 {
+  background: #f1f1f1;
+}
+
+/*image collage/gallery*/
+.bwg_container,
+.bwg-standard-thumbnails {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.bwg-item {
+  min-width: 30vw !important;
+}
+
+.bwg_load_btn {
+  color: #ffffff00 !important;
+  border-radius: 5px !important;
+  padding: 5px !important;
+  &:hover {
+    background: #bdbdbd !important;
+    &::before {
+      color: #272727 !important;
+    }
+  }
+  &::before {
+    content: 'indlæs flere...';
+    color: #666666 !important;
+    font-size: 12px !important;
+    position: absolute;
+    margin-top: 10px;
+  }
+}
+
+/*kontakt*/
+#submit input {
+  border-radius: 5px;
+  border: 1px solid #00000000;
+  transition: 0.4s;
+  &:hover {
+    border: 1px solid #272727;
+    transition: 0.4s;
+  }
+}
+
+/*Footer*/
+.entry-header,
+.menu,
+.footer-nav-widgets-wrapper {
+  display: none;
+}
+#footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 170px;
+  p {
+    margin: 0;
+  }
+  a {
+    color: black;
+    &:nth-child(4) {
+      line-height: 2.7em;
+    }
+    &:hover {
+      color: white;
+    }
+  }
+}
+#footer-right {
+  margin: 35px 0;
+  padding-right: 50px;
+  white-space: nowrap;
+  p {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .wp-block-column {
+    &:last-child {
+      margin-left: 20px;
+      display: unset;
+      justify-content: unset;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header-navigation-wrapper a:hover,
+  .current_page_item {
+    border-bottom: none;
+    color: #4d86a7;
+  }
+  .bwg-item {
+    min-width: 45vw !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #footer {
+    font-size: 1.6rem;
+  }
+  #footer-right {
+    padding-right: 0;
+  }
+  .bwg-item {
+    min-width: 70vw !important;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .wp-block-column {
+    &:last-child {
+      margin-left: 0px;
+    }
+  }
+  .p-tekst {
+    padding: 0 !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bwg-item {
+    min-width: 90vw !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #footer {
+    font-size: 1.3rem;
+  }
+  #footer-left {
+    a {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #footer .site-logo img {
+    position: initial !important;
+  }
+}
+
+@media screen and (max-width: 335px) {
+  #footer-left {
+    padding-right: 30px;
+    text-align: center;
+  }
+  #footer-right {
+    padding-right: 5px;
+  }
+}

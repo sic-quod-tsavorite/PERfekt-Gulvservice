@@ -1,0 +1,110 @@
+#header {
+  background-color: #f4f4f3;
+  height: 115px;
+}
+#header .site-logo img {
+  max-height: 10rem;
+  left: 10vw;
+  position: absolute;
+  top: 0px;
+  margin-top: 7.5px;
+}
+
+#header a {
+  color: black;
+  font-weight: bold;
+}
+
+#tlf a {
+  background-color: #17c074;
+  color: #f4f4f3;
+}
+#tlf a:hover {
+  background-color: #08a860;
+  color: #f4f4f3;
+}
+
+/*kontakt*/
+#post-37 .entry-content {
+  margin-top: 30px;
+}
+#submit input {
+  background-color: #5c97b8;
+}
+#submit input:hover {
+  background-color: #f4f4f3;
+  color: #272727;
+}
+
+#footer {
+  background-color: #183a53e0;
+  color: #f4f4f3;
+  height: 170px;
+}
+
+#footer a {
+  color: #f4f4f3;
+}
+
+#footer .site-logo img {
+  max-height: 125px;
+  filter: invert(1);
+  left: 10vw;
+  position: absolute;
+  bottom: 20px;
+}
+#footer-right p {
+  margin-bottom: 10px;
+}
+
+#galBA {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+#post-35
+  .entry-content
+  > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+  max-width: unset;
+}
+
+#post-42
+  .entry-content
+  > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+  max-width: unset;
+}
+#sportsGa .s201_slides {
+  display: flex !important;
+  margin: 0 auto;
+}
+.s201_slides {
+  margin: 0 5px;
+}
+
+.bwg_ctrl_btn:hover,
+.bwg_toggle_btn:hover,
+.spider_popup_close:hover,
+.spider_popup_close_fullscreen:hover,
+#spider_popup_left:hover #spider_popup_left-ico,
+#spider_popup_right:hover #spider_popup_right-ico {
+  color: black;
+}
+
+#spider_popup_left-ico,
+#spider_popup_right-ico {
+  color: black !important;
+  font-size: 35px !important;
+}
+
+.s201_full_width {
+  width: unset;
+}
+
+@media screen and (max-width: 700px) {
+  #galBA {
+    flex-direction: column;
+  }
+  .s201_slides {
+    margin-bottom: 10px;
+  }
+}
